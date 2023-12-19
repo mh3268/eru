@@ -1,4 +1,11 @@
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+    <category>
+        <pattern>*</pattern>
+        <template><delay>1</delay>Hi! My name is Eru, the career guide. What is your name? (My name is...)</template>
+    </category>
+    
+  
+	
+</aiml>

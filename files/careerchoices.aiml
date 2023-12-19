@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	    <pattern>SOFTDEV</pattern>
+	    <template>
+	        <delay>4</delay>It seems like Software Development could be a great match for you!
+        Software Developers craft programs enabling users to perform tasks on devices like computers or mobiles.
+        The median annual wage for software developers was $127,260 in May 2022.
+	        (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATASCI</pattern>
+        <template>
+            <delay>4</delay> It sounds like pursuing a career as a Data Scientist might be a great fit for you!
+        Data Scientists analyze and assess data needs, working to enhance data resources for storing and retrieving crucial information.
+        Data Scientists earned a median income of $102,907 in May 2022! 
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CYBERAN</pattern>
+        <template>
+            <delay>4</delay>Consider exploring a career as a Cybersecurity Analyst!
+        Cybersecurity Analysts evaluate user needs for secure information systems. They focus on safeguarding against cyber threats.
+        The median annual wage for Cybersecurity Analyst was $109,690 in May 2022.
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SYSAN</pattern>
+        <template>
+            <delay>4</delay>It seems like a career as a Systems Analyst might be a good fit for you!
+        Systems Analysts oversee the daily operation of computer networks, working across various industries.
+        Systems analysts earned a median income of $110,789 in May 2019!
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NETENG</pattern>
+        <template>
+            <delay>4</delay>Perhaps you should explore a career as a Network Engineer!
+        Network Engineers design and manage information networks, focusing on safeguarding against cyberattacks and security breaches.
+        Network engineers earned a median income of $115,789 in May 2020!
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>COMPNETARCH</pattern>
+        <template>
+            <delay>4</delay> An exciting option for you to consider is becoming a Computer Network Architect!
+        Computer Network Architects design, implement, and upkeep networking and data communication systems, including LANs, WANs, extranets, and intranets.
+        They assess organizational needs for data sharing and communications.
+        Computer network architects earned a median income of $110,000 in May 2021!
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>COMPSUPPSPEC</pattern>
+        <template>
+            <delay>4</delay>Another potential path for you could be a Computer Support Specialist!
+        Computer support specialists offer assistance and guidance to computer users and organizations.
+        They require a solid understanding of how computers work and excellent interpersonal skills to effectively assist their clients.
+        Computer support specialists earned a median income of $104,850 in May 2022!
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOTOALL</pattern>
+        <template>
+            <delay>4</delay>I recommend gaining a deeper understanding of your strengths and interests within the computer science industry.
+        The array of computer science jobs is as diverse as the computers they run on!
+        Once you have a clearer understanding of your strengths and interests, return by saying "Hello," and we can explore some fantastic opportunities for you.
+        </template>
+    </category>
+	
+</aiml>

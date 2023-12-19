@@ -1,72 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-
-    <!-- Greetings Category -->
+    
     <category>
         <pattern>*</pattern>
-        <template>
-            <delay>1</delay>
-            Hi there! I'm your Computer Science Career Advisor. What's your name?
-        </template>
+        <template><delay>3</delay>I apologize if there's confusion. Let's start over. If you have any questions or need assistance, feel free to begin by saying "Hello."</template>
     </category>
-
-    <!-- Job Identification Category -->
+    
     <category>
-        <pattern>What jobs can I consider with a computer science degree?</pattern>
-        <template>
-            With a computer science degree, you have various career options. Here are five common ones:
-            1. Software Developer
-            2. Data Scientist
-            3. Cybersecurity Analyst
-            4. Systems Analyst
-            5. Network Engineer
-            Let's explore which one aligns with your strengths and preferences. What are you passionate about?
-        </template>
+        <pattern>HELLO</pattern>
+        <template><delay>1</delay>Hi! My name is Eru, the career guide. What is your name? (My name is...)</template>
     </category>
-
-    <!-- Software Developer Category -->
+    
     <category>
-        <pattern>Software Developer</pattern>
-        <template>
-            Great choice! Software developers create applications and software solutions. 
-            What programming languages or technologies are you most comfortable working with?
-        </template>
+        <pattern>MY NAME IS *</pattern>
+        <template><delay>4</delay>Nice to meet you <set name = "username"><star /></set>. I am here to help you find a career that best fits your interests. Shall we begin? (Yes, No)</template>
     </category>
-
-    <!-- Data Scientist Category -->
+    
     <category>
-        <pattern>Data Scientist</pattern>
-        <template>
-            Excellent! Data scientists analyze and interpret complex data sets. 
-            Do you enjoy working with data and have experience with any specific tools or languages?
-        </template>
+        <pattern>NO</pattern>
+        <template><delay>2</delay> No problem at all! Whenever you're ready to start, just say "Hello," and we can continue our conversation.</template>
     </category>
-
-    <!-- Cybersecurity Analyst Category -->
+    
     <category>
-        <pattern>Cybersecurity Analyst</pattern>
-        <template>
-            Cybersecurity is crucial! Cybersecurity analysts protect systems from cyber threats. 
-            Are you interested in security measures, and have you taken any cybersecurity courses?
+        <pattern>YES</pattern>
+        <template><delay>3</delay>Great! I'll be asking you a few basic questions, and you can choose the answers that align best with your interests.<delay>2</delay>Would you describe yourself as a creative person?
+            <button>
+                <text>yes</text>
+                <postback>YESCREATIVE</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NOCREATIVE</postback>
+            </button>
         </template>
     </category>
-
-    <!-- Systems Analyst Category -->
+    
     <category>
-        <pattern>Systems Analyst</pattern>
-        <template>
-            Systems analysts assess and optimize computer systems. 
-            Do you have a knack for understanding how different components work together in a system?
+        <pattern>START AGAIN</pattern>
+        <template><delay>1</delay>Let's try again.<delay>2</delay>So, would you say that you are a creative person?
+            <button>
+                <text>yes</text>
+                <postback>YESCREATIVE</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NOCREATIVE</postback>
+            </button>
         </template>
     </category>
-
-    <!-- Network Engineer Category -->
+    
     <category>
-        <pattern>Network Engineer</pattern>
+        <pattern>YESCREATIVE</pattern>
         <template>
-            Networking is vital! Network engineers design and manage computer networks. 
-            Are you familiar with networking concepts and technologies?
+            <delay>2</delay>Ok great! Would you say that you're good at problem solving?
+            <button>
+                <text>yes</text>
+                <postback>YESCREATIVEYESPROBSOLV</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>YESCREATIVENOPROBSOLV</postback>
+            </button>
         </template>
     </category>
-
+    
+    <category>
+        <pattern>NOCREATIVE</pattern>
+        <template>
+            <delay>2</delay>Not a problem! Would you say that you're good at problem solving?
+            <button>
+                <text>yes</text>
+                <postback>NOCREATIVEYESPROBSOLV</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NOCREATIVENOPROBSOLV</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>YESCREATIVEYESPROBSOLV</pattern>
+        <template>
+            <delay>2</delay>Ok great! Are you a people person?
+            <button>
+                <text>yes</text>
+                <postback>SOFTDEV</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>DATASCI</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>YESCREATIVENOPROBSOLV</pattern>
+        <template>
+            <delay>2</delay>Don't worry about that! Are you a people person?
+            <button>
+                <text>yes</text>
+                <postback>CYBERAN</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>SYSAN</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOCREATIVEYESPROBSOLV</pattern>
+        <template>
+            <delay>2</delay>Awesome! Are you a people person?
+            <button>
+                <text>yes</text>
+                <postback>NETENG</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>COMPNETARCH</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOCREATIVENOPROBSOLV</pattern>
+        <template>
+            <delay>2</delay>Don't worry about that! Are you a people person?
+            <button>
+                <text>yes</text>
+                <postback>COMPSUPPSPEC</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NOTOALL</postback>
+            </button>
+        </template>
+    </category>
+    
 </aiml>
